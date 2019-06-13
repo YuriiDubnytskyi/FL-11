@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <header>
+                <img src="logo.png" alt="logo-epam">
+                <h1 id="home"><b>HTML Elements</b></h1>
+                <hr>
+                <nav>                  
+                    <a href="#home"><u><b>Home</b></u></a>
+                    <a href="#headers"><u><b>Headers</b></u></a>
+                    <a href="#textformats"><u><b>Text formats</b></u></a>
+                    <a href="#list"><u><b>List</b></u></a>
+                    <a href="#table"><u><b>Table</b></u></a>
+                    <a href="#blockquotes"><u><b>Blockquotes</b></u></a>                    
+                </nav>
+                <hr>               
+                <p>
+                Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <i>This is emphasized.</i> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <i>The New York Times</i> (That’s a citation).<u>Underline.</u> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+                </p>
+                <p>
+                Watch out for the abbreviations! <abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type <kbd>COPY</kbd> <i>filename</i>. <del>Dinner`s at 5:00.</del> <ins>Let’s make that 7.</ins> This <del>text</del> has been struck.
+                </p>
+                <hr>
+          </header>
+            <section id="headers">
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>                
+                <hr>
+            </section>  
+            <section>
+          <h2 id="textformats">Text formats</h2>
+          <h3>Article Text</h3>
+          <article>
+            <h2>Article title</h2>
+            <p>Article description</p>
+          </article>
+          <h3>Preformatted Text</h3>
+          <pre>
+<b>Text</b>
+    in a <b>pre</b> element
+      is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+          </pre>  
+          <h3>This is code</h3>  
+      <pre><code>
+.wrapper {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+ }
+      </code></pre>
+        </section>
+        <section id="list">
+            <h2>Unordered Product List</h2>
+            <ul>
+                <li>Eggs</li>
+                <li>Meat
+                <ul>
+                  <li>Chicken</li>
+                  <li>Beef</li>
+                  <li>Pork</li>
+                </ul>
+                </li>                            
+                <li>Milk</li>
+            </ul>
+            <h2>Ordered TODO List</h2>
+            <ol>
+                <li>Relax</li>
+                <li>Finish homework
+                    <ol>
+                        <li>Analyze requirements</li>
+                        <li>Create HTML page</li>
+                        <li>Upload to GitHub</li>
+                    </ol>                          
+                <li>Enjoy your day</li>
+            </ol>
+            <h3>Definition List</h3>  
+            <dl>
+                <dt>HTML</dt>
+                    <dd>HTML is the standard markup language for Web pages</dd>
+                <dt>CSS</dt>
+                    <dd>CSS describes how HTML elements are to be displayed</dd>
+                <dt>JavaScript</dt>
+                    <dd>JavaScript is the Programming Language for the Web</dd>                
+            </dl>
+            <p>                  
+                Select option
+                <select name="select">
+                    <option value="rhtml">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </p>           
+            <hr>
+          </section>
+          <section id="table">
+                <h2>Table</h2>
+                <table>            
+                    <thead>              
+                        <tr>
+                            <th>Cities</th>
+                            <th>Technologies</th>
+                        </tr>
+                    </thead>             
+                    <tbody>
+                        <tr>
+                            <td>Lviv</td>
+                            <td>HTML</td>          
+                        </tr>
+                        <tr>
+                            <td>Vinnytsia</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>Dnipro</td>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Kharkiv</td>
+                            <td>Angular</td>
+                        </tr>
+                        <tr>
+                            <td>Kyiv</td>
+                            <td>ReactJS</td>
+                        </tr>
+                    </tbody>
+                </table>
+          </section>
+          <section id="blockquotes">
+                <h2>Blockquotes</h2>
+                <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+                <blockquote>
+              "If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. These are all things that would have been considered magic a few hundred years ago."
+                <br>
+                <a href="https://uk.wikipedia.org/wiki/%D0%86%D0%BB%D0%BE%D0%BD_%D0%9C%D0%B0%D1%81%D0%BA" target="_blank">Elon Mask</a>
+                </blockquote>
+                <hr>
+                <form>
+                    <label>First name:
+                        <input type="text" name="firstName">
+                    </label>
+                    <br>
+                    <label>Surname:
+                        <input type="text" name="surname">
+                    </label>
+                    <br>
+                    <label>Email:
+                        <input type="email" name="surname">
+                    </label>
+                    <br>
+                    <textarea cols="30" rows="5"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>  
+            <footer>
+                © Copyright Epam Systems
+            </footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
