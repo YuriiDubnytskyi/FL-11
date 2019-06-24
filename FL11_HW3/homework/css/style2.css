@@ -1,0 +1,173 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #21232E; }
+
+.landing-logo, .footer .footer-wrap .footer_logo {
+  color: #fff;
+  padding: 5% 0; }
+  .landing-logo img, .footer .footer-wrap .footer_logo img {
+    float: left; }
+  .landing-logo p, .footer .footer-wrap .footer_logo p {
+    font-weight: bold;
+    margin: 3px 10px;
+    padding: 0 50px;
+    font-size: 20px; }
+    .landing-logo p span, .footer .footer-wrap .footer_logo p span {
+      display: block;
+      font-size: 10px;
+      margin-left: 5px; }
+
+.header {
+  height: 100vh;
+  background-image: url(../img/m-h-night.jpg);
+  background-size: 100% 100%;
+  -webkit-clip-path: inset(0% 0 0% 0 round 0 0% 35% 0%); }
+  .header .header-wrap {
+    width: 50%;
+    margin: 0 auto 0 10%; }
+  .header .header_heading {
+    width: 50%;
+    font-size: 50px;
+    font-weight: bold; }
+    .header .header_heading:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #FF4E33;
+      z-index: -1;
+      width: 210px;
+      height: 20px;
+      top: 260px; }
+  .header .header_text {
+    white-space: pre-line;
+    font-family: 'Hind', sans-serif;
+    color: #fff; }
+  .header .header_button {
+    background: #E3AC00;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10%;
+    font-weight: bold; }
+
+.section {
+  width: 80%;
+  margin: 0 auto; }
+  .section .section_text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; }
+    .section .section_text:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #FF4E33;
+      z-index: -1;
+      width: 135px;
+      height: 10px;
+      top: 710px;
+      left: 680px; }
+  .section .section_card_wrap {
+    display: inline-block;
+    padding-bottom: 100px; }
+    .section .section_card_wrap .section_card {
+      width: 30%;
+      float: left;
+      background: #3B3F50;
+      color: white;
+      margin-left: 20px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 3%; }
+      .section .section_card_wrap .section_card img {
+        width: 90%;
+        height: auto;
+        padding: 15px; }
+    .section .section_card_wrap .section_card_text {
+      padding: 5px;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #a0a0a0; }
+    .section .section_card_wrap .section_card_heading {
+      font-size: 20px;
+      margin: 5px;
+      z-index: 9;
+      position: relative;
+      font-weight: bold; }
+      .section .section_card_wrap .section_card_heading .section_card_underline {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #FF4E33;
+        z-index: -1;
+        width: 150px;
+        height: 10px;
+        top: 15px;
+        left: 80px;
+        z-index: -1; }
+  .section .section_banner {
+    width: 70%;
+    margin: 0 auto;
+    height: 150px;
+    background: linear-gradient(45deg, #E1A902, #942E51);
+    position: relative;
+    top: 60px;
+    border-radius: 3%; }
+    .section .section_banner .section_banner_text_wrap {
+      width: 65%;
+      float: left;
+      padding: 2% 0 0 10%; }
+    .section .section_banner .section_banner_text {
+      color: #a0a0a0; }
+    .section .section_banner .section_banner_heading {
+      margin-top: 5px;
+      font-size: 30px;
+      font-weight: bold;
+      z-index: 1;
+      position: relative;
+      color: #fff; }
+      .section .section_banner .section_banner_heading:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #FF4E33;
+        z-index: -1;
+        width: 65px;
+        height: 15px;
+        top: 20px;
+        left: 120px; }
+    .section .section_banner .section_banner_button {
+      background: #E3AC00;
+      color: white;
+      padding: 10px 40px;
+      border: none;
+      margin-top: 50px;
+      border-radius: 5%;
+      font-weight: bold; }
+
+.footer {
+  background: #3B3F50;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #a0a0a0;
+  height: 200px; }
+  .footer .footer-wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .footer .footer-wrap .footer_logo {
+      width: 20%;
+      float: left;
+      padding-top: 40px;
+      color: #a0a0a0; }
+    .footer .footer-wrap .footer_text {
+      float: left;
+      width: 30%;
+      padding-top: 20px;
+      padding-left: 10%; }
+    .footer .footer-wrap .footer-cr {
+      float: left;
+      width: 20%;
+      padding-top: 45px;
+      padding-left: 15%; }

@@ -1,0 +1,14 @@
+$map-colors: (
+	colorUderline:(#14A0C7),
+	colorHeaderText:(#2C2F3C),
+	colorBtm:(#699900),
+	colorWhite:(white),
+	colorText:(#a0a0a0)
+);
+$backgroundImage : url(../img/m-h-day.jpg);
+$gradient:linear-gradient(45deg, #679708, #2E5CD7);
+$fontMain:'Source Sans Pro', sans-serif;
+$logoColor:map_get($map-colors,colorWhite);
+$logoColorBaner:black;
+$bodyBag:white;
+$footerBag:#21232E;

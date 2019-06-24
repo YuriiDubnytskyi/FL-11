@@ -1,0 +1,192 @@
+@mixin underline {
+  	content: "";
+  	display: block;
+  	position: absolute;
+  	background-color: map_get($map-colors,colorUderline);
+	z-index: -1;
+}
+body{
+	margin: 0 auto;
+	width: 100%;
+	font-family:  $fontMain;
+	background:$bodyBag
+}
+.landing-logo{
+	color: $logoColor;
+	padding: 5% 0;
+	img{
+		float: left;
+	}
+	p{
+		font-weight: bold;
+		margin: 3px 10px;
+		padding:0 50px;
+		font-size: 20px;
+		span{
+			display: block;
+			font-size: 10px;
+			margin-left: 5px;
+		}
+	}
+}
+.header{
+	height: 100vh;
+	background-image: $backgroundImage;
+	background-size: 100% 100%;
+	-webkit-clip-path: inset(0% 0 0% 0 round 0 0% 35% 0%);
+	.header-wrap{
+		width: 50%;
+		margin: 0 auto 0 10%;
+	}
+	.header_heading{
+		width: 50%;
+		font-size: 50px;
+		font-weight: bold;
+		&:after{
+			@include underline;
+			width: 210px;
+			height: 20px;
+			top: 260px;
+		}
+	}
+	.header_text{
+		white-space: pre-line;
+		font-family: 'Hind', sans-serif;
+		color: map_get($map-colors,colorHeaderText);
+	}
+	.header_button{
+		background:map_get($map-colors,colorBtm);
+		color:map_get($map-colors,colorWhite);
+		padding: 10px 30px;
+		border:none;
+		margin-top: 30px; 
+		border-radius:10%;
+		font-weight: bold;
+	}
+}
+.section{
+	width: 80%;
+	margin: 0 auto;
+	.section_text{
+		text-align:center;
+		font-size: 30px;
+		font-weight: bold;
+		&:after{
+			@include underline;
+			width: 135px;
+			height: 10px;
+			top: 710px;
+			left:680px;
+		}
+	}
+	.section_card_wrap{
+		display: inline-block;
+		padding-bottom:100px;
+		.section_card{
+			width: 30%;
+			float: left;
+			background:$footerBag;
+			color:white;
+			margin-left:20px;
+			text-align: center;
+			padding: 5px;
+			border-radius:3%;
+			img{
+				width: 90%;
+				height: auto;
+				padding:15px;
+			}
+		}
+		.section_card_text{
+			padding:5px;
+			font-family: $fontMain;
+			color: map_get($map-colors,colorText);
+		}
+		.section_card_heading{
+			font-size: 20px;
+			margin: 5px;
+			z-index: 9;
+			position:relative;
+			font-weight: bold;
+			.section_card_underline{
+				@include underline;
+				width: 150px;
+				height: 10px;
+				top: 15px;
+				left: 80px;
+				z-index: -1;					
+    		}
+		}
+}
+	.section_banner{
+		width: 70%;
+		margin: 0 auto;
+		height: 150px;
+		background:$gradient;
+		position: relative;
+  		top: 60px;
+  		border-radius:3%;
+  		.section_banner_text_wrap{
+  			width: 65%;
+  			float: left;
+  			padding:2% 0 0 10%;
+  		}
+  		.section_banner_text{
+  			color:map_get($map-colors,colorText);
+  		}
+  		.section_banner_heading{
+  			margin-top:5px;
+  			font-size: 30px;
+  			font-weight: bold;
+  			z-index: 1;
+  			position:relative;
+  			color: $logoColorBaner;
+  			&:after{
+				@include underline;
+				width: 65px;
+				height: 15px;
+				top: 20px;
+				left: 120px;
+			}
+  		}
+  		.section_banner_button{
+  			background:map_get($map-colors,colorBtm);
+			color:white;
+			padding: 10px 40px;
+			border:none;
+			margin-top: 50px; 
+			border-radius:5%;
+			font-weight: bold;
+  		}
+	}
+}
+.footer{
+	background:$footerBag;
+	font-family: $fontMain;
+	color: map_get($map-colors,colorText);
+	height: 200px;
+	.footer-wrap{
+		width: 80%;
+		margin: 0 auto;
+		padding-top:50px;
+		.footer_logo{
+			width: 20%;
+			float: left;
+			padding-top:40px;
+			@extend .landing-logo;
+			color:map_get($map-colors,colorText);
+		};
+		.footer_text{
+			float: left;
+			width: 30%;
+			padding-top:20px;
+			padding-left:10%;
+		}
+		.footer-cr{
+			float: left;
+			width: 20%;
+			padding-top:45px;
+			padding-left:15%;
+		}
+	}
+}
