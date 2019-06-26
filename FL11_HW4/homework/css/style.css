@@ -6,6 +6,7 @@
 body{
   min-width: 900px;
   background: #E8E8E8;
+  overflow-x: hidden;
 }
 header {
     position: relative;
