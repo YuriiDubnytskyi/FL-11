@@ -1,0 +1,265 @@
+.nav-full{
+  display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: roboto;
+  background: #0b192f;
+  width: 80%;
+  margin: 0 auto;
+}
+.post-1 {
+  background: #B71757;
+}
+.post-2 {
+  background: #0D7E71;
+}
+.post-3 {
+  background: #b1660e;
+}
+.post-4 {
+  background: #d12767;
+}
+.post-5 {
+  background: #2d95bb;
+}
+article div.text{
+  width: 30%;
+  padding: 5%;
+}
+div.text h2{
+  font-weight: 300;
+  font-size: 3vw;
+}
+div.text p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+  line-height: 2vw;
+}
+article div.date-create{
+  width: 10%;
+}
+article div.text-full{
+  width: 90%;
+  padding: 5%;
+}
+div.text-full h2{
+  font-weight: 300;
+  font-size: 3vw;
+}
+div.text-full p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+}
+article{
+  display: flex;
+  width: 100%;
+  color:white;
+}
+main article:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+main article:nth-child(even) h2{
+  text-align: right;
+}
+main article:nth-child(even) p{
+  text-align: right;
+}
+main article:nth-child(even) {
+  flex-direction: row;
+}
+article div.image{
+  width: 50%;
+}
+img{ 
+  width: 100%;
+  height: 100%;
+}
+header{
+  background: #162b4d;
+  color: #fff;
+  height: 100px;
+  font-weight: 100;
+}
+header span{
+  color:#B71757;
+}
+header h1{
+  font-weight: 200;
+}
+nav a{
+  text-decoration: none;
+  color:#fff;
+  padding: 10px;
+}
+nav{
+  float: right;
+  padding: 40px 50px 0 0;
+}
+h1{
+  float: left;
+  padding: 30px;
+}
+article,footer{
+  color: rgba(255, 255, 255, 0.7);
+}
+main{
+  width: 70%;
+  margin: 20px 20px 20px 0;
+  float: left;
+}
+.number{
+  font-size: 4vw;
+  font-size: 30px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+}
+.mouns{
+  font-size: 2vw;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+aside{
+  width: 25%;
+  float: right;
+}
+aside article{
+  flex-direction: column;
+  color: black;
+  background: #fff;
+  margin: 20px 0 20px 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.text-news{
+  padding: 10%;
+}
+div.text-news h2{
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+div.text-news p{
+  font-weight: 300;
+  font-size: 1vw;
+  font-size: 15px;
+}
+footer{
+
+  background-color: #162b4d;
+  clear: both;
+  height: 100px;
+  margin: 0 0 10px 0;
+}
+.left{
+  float: left;
+  width: 70%;
+  font-size: 1vw;
+  font-size: 15px;
+  padding: 30px 10px 30px 10px;
+}
+.right{
+  width: 15%;
+  
+  font-size: 1vw;
+  font-size: 15px;
+  float: right;
+  padding: 30px;
+}
+nav a:hover {
+  background: #283d5f;
+}
+.text:hover, .image:hover, .text-full:hover{
+   filter: opacity(50%);
+   cursor: pointer
+}
+@media only screen and (max-width: 768px) {
+  main article:nth-child(even), main article:nth-child(odd) {
+    flex-direction: column-reverse;
+
+  }
+  div.text h2{
+  font-size: 5vw;
+}
+div.text-news h2{ 
+  font-size: 4vw;
+}
+div.text-full h2{
+  
+  font-size: 5vw;
+}
+  nav{
+    display: none;
+  }
+  main{
+    width: 55%;
+  }
+  aside{
+  width: 35%;
+  float: right;
+}
+footer{
+  height: 150px;
+}
+  article div.text{
+  width: 95%;
+  padding: 5%;
+}
+article div.date-create{
+  width: 100%;
+}
+article div.image{
+  width: 100%;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+main article:nth-child(even) h2, main article:nth-child(even) p{
+  text-align: left;
+}
+main article:nth-child(even) p.date,main article:nth-child(odd) p.date{
+  text-align: center;
+}
+.left{
+  width: 100%;
+  text-align: center;
+  padding:30px 0 0 0;
+}
+.right{
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+div.text p{
+  line-height: 3vw;
+}
+.nav-full{
+  display: block;
+  text-align: center;
+}
+h1{
+  float: none;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  div.text p{
+    line-height: 5vw; 
+  }
+  aside{
+    width: 100%;
+  }
+  aside article{
+    margin-top: 0px; 
+  }
+
+}
