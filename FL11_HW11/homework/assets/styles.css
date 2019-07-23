@@ -1,0 +1,68 @@
+/* Your styles goes here */
+
+
+body{
+    margin: 5px auto;
+    width: 800px;
+    font-family: sans-serif;
+
+}
+#root{
+    border: solid 2px #919191;
+    overflow: auto;
+    height: 800px;
+}
+h1{
+    margin: 15px auto;
+    width: 250px;
+    font-weight: normal;
+}
+input{
+    float: left;
+    width: 600px;
+    margin: 5px 30px;
+    margin-bottom: 20px;
+}
+button{
+    float: left;
+    padding: 0;
+    border: 0;
+}
+.material-icons{
+    font-size: 30px;
+}
+hr{
+    margin-top: 61px;
+    border: solid 1px gray;
+}
+li{
+    width: 665px;
+    margin: 15px 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+.close{
+    float: right;
+    background-color: white;
+}
+.add{
+    background-color: white;
+    float: left;
+    flex-direction: row;
+}
+span{
+    vertical-align: bottom;
+    width: 600px;
+    height: 22px;
+}
+img{
+    position: absolute;
+    bottom: 50px;
+    top: 570px;
+    left: 715px;
+}
+ul{
+    padding-left: 20px;
+}
